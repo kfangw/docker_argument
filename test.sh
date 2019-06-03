@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+docker run --rm -it --entrypoint /bin/bash $(docker build -q .)
+
 docker run --rm -it $(docker build -q .) # 1 2 3 4 --sum
 
 docker run --rm -it $(docker build -q .) 1 2 --sum
